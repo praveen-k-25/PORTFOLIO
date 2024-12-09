@@ -1,0 +1,11 @@
+@import "../src/vars.css";
+/* import css file - vars */
+
+.App{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-width: 370px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}

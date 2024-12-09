@@ -1,0 +1,39 @@
+.expertice{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+.compenent{
+    width: 100%;
+    
+}
+.img-header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert-header{
+    display: grid;
+    place-content: center;
+    padding: 10px;
+}
+.expert-header h2{
+    font-size: 35px;
+    font-weight: 700;
+    font-style: "Outfit";
+}
+.sibiling-img{
+    width: 120px;
+    height: 120px;
+    background: rgba(25, 55, 109, 1);
+    display: grid;
+    place-content: center;
+    border-radius: 100px;
+    margin: 30px 20px;
+}
+.sibiling{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

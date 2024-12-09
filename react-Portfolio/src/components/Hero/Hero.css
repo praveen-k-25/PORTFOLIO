@@ -1,0 +1,117 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin: 50px 10% 0;
+    
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items:flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.content .title{
+    font-size: 62px;
+    font-weight: 700;
+    margin:50px 0 34px;
+    font-family: var(--font-roboto);
+    background: linear-gradient(
+        90deg,
+        #FFFFFF 70%,
+        rgba(255, 255, 255, 0) 120%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.content .description{
+    font-size:30px ;
+    margin-bottom: 32px;
+    font-family: var(--font-roboto);
+}
+.contactMe{
+    margin-top: 32px;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 17px ;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+}
+.heroImg{
+   max-width: 400px;
+   max-height: 400px;
+    
+}
+.heroImg{
+    width: 50%;
+    z-index: 1;
+    animation-name: hero;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes hero{
+    0% {
+        transform: translate(0,0px);
+    }
+    50% {
+        transform: translate(0,30px);
+    }
+    100% {
+        transform: translate(0,-0px);
+    }
+}
+
+.topBlur{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: -128px;
+    left: 0vw;
+    border-radius: 764px;
+    background: rgba(25,55,109,0.7);
+    filter: blur(100px);
+    z-index: -1;
+}
+.bottomBlur{
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: 246px;
+    right: -30vw;
+    border-radius: 764px;
+    background: rgba(25,55,109,0.7);
+    filter: blur(100px);
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .heroImg{
+        width: 80%;
+    }
+    @keyframes hero{}
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .content,.content .title,.content .description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

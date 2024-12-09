@@ -1,0 +1,118 @@
+.projects .wrapper{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projects .wrapper .items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 5%;
+    margin: 40px 0 70px;
+}
+.projects .wrapper h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 5%;
+    margin-bottom: 25px;
+}
+.projectItem img{
+    width: 298px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px 0 15px 14px;
+}
+.projectItem h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.projectItem p{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 0 0 0 10px;
+}
+.projectItem .space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectItem{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
+    width: 345px;
+    
+    border-radius: 10px;
+    background: linear-gradient(
+        180deg, 
+        #576CBC -50.75%,
+        #132A53 60.1%
+    );
+}
+.language{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+/* .language .border{
+    padding: 5px 13px;
+    background: rgba(11, 36, 71, 1);
+} */
+ .language .border .btn{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px 15px;
+    background: rgba(11, 36, 71, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    border: none;
+ }
+ .border .btn{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px 18px;
+    background: rgba(87, 108, 188, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    border: none;
+ }
+ .border .btn a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1)
+ }
+ .source {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+ .items section:first-child .language{
+    margin-top: 55px;
+ }
+.hover:hover{
+    box-shadow: 0 0 15px 2px rgb(109, 104, 104);
+}
+ @media screen and (max-width:500px){
+    .projects .wrapper{
+        align-items: center;
+        margin: 0;
+        
+    }
+    .projects .wrapper .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+ }

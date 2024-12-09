@@ -1,0 +1,87 @@
+@import "../../vars.css";
+
+.navbar{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding-top: 40px;
+    z-index: 3;
+}
+/* NAV TITLE  */
+.navbar .title{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+}
+ 
+.menuItems{
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+.menuItems a{
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width :1000px){
+   .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+   }
+
+   .menu{
+    position: absolute;
+    right: 0;
+    gap: 11px;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 3;
+   }
+   .menuBtn{
+    cursor: pointer;
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 30px;
+    
+   }
+   .menuItems{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background-color: rgb(25,55,109);
+    background: linear-gradient(
+        0deg,
+        rgba(25,55,109,0.2)0%,
+        rgba(25,55,109,01)100%
+    );
+    /* linear-gradient(90deg, #1eca15 30%, rgb(210 196 16) 100%) */
+    padding: 24px;
+    box-shadow: 0 0 4px 0  rgba(98, 177, 25, 0.25);
+   }
+
+   .menuOpen{
+    display: flex;
+    z-index: 1;
+   }
+    
+}
+
+@media screen and (min-width :1000px){
+    .menu img{
+        position: fixed;
+        left: -99999px;
+    }
+}
+
