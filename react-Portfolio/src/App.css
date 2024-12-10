@@ -2,10 +2,12 @@
 /* import css file - vars */
 
 .App{
+    font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     background-color: var(--color-bg);
     color: var(--color-text);
     min-width: 370px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    /* padding-bottom: 40px; */
 }

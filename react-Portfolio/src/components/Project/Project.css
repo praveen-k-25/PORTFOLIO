@@ -57,6 +57,12 @@
         #576CBC -50.75%,
         #132A53 60.1%
     );
+    transition: 0.4s ease;
+    
+}
+.projectItem:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px  rgb(89, 89, 89);
 }
 .language{
     display: flex;
@@ -114,5 +120,5 @@
         align-items: center;
         justify-content: center;
         gap: 25px;
-    }
+    } 
  }

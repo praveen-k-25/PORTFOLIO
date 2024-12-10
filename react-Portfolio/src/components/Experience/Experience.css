@@ -4,8 +4,7 @@
     justify-content: center;
 }
 .compenent{
-    width: 100%;
-    
+    width: 100%;    
 }
 .img-header{
     display: flex;
@@ -31,7 +30,23 @@
     place-content: center;
     border-radius: 100px;
     margin: 30px 20px;
+    box-shadow: inset 0px 0px 6px 1px #42C0FA;
+    transition: 0.7s ease;
+
 }
+.sibiling-img:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 25px 5px #11bece;
+}
+/* @keyframes expert {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+    
+} */
 .sibiling{
     display: flex;
     flex-direction: column;

@@ -14,7 +14,7 @@ const Contact = () => {
         <section className="links">
             <div className="link">
                 <img src="asserts/Contact/image 12.png" alt="" />
-                <p>praveendevcreate.gmail.com</p>
+                <a href='mailto:praveendevcreate@gmail.com'>praveendevcreate.gmail.com</a>
             </div>
             <div className="link">
                 <img src="asserts/Contact/image 13.png" alt="" />
@@ -24,7 +24,7 @@ const Contact = () => {
                 <img src="asserts/Contact/image 14.png" alt="" />
                 <a href="https://github.com/praveen-k-25">github.com/praveen k</a>
             </div>
-        </section>
+        </section> 
         
     </div>
   )

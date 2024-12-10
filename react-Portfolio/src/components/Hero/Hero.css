@@ -5,9 +5,7 @@
     justify-content: space-between;
     margin-top: 49px;
     z-index: 1;
-    margin: 50px 10% 0;
-    
-
+    margin: 50px 10% 150px;
 }
 .content{
     display: flex;
@@ -39,37 +37,45 @@
 }
 .contactMe{
     margin-top: 32px;
+    white-space: no-wrap;
     text-decoration: none;
-    background-color: var(--color-primary);
-    color: var(--color-text);
+    background-color: #576cbc;
+    color: rgb(255, 245, 245);
     font-size: 25px;
     font-weight: 600;
     border-radius: 100px;
     padding: 17px ;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+    box-shadow:   2px 2px 4px 1px #6e7dba95;
+}
+.contactMe:active{
+    box-shadow:  inset -3px -2px 10px #1a213a95, inset 3px 2px 10px #1a213a95,inset 3px -2px 10px #1a213a95,inset -3px 2px 10px #1a213a95;
+    
 }
 .heroImg{
    max-width: 400px;
    max-height: 400px;
-    
+    width: 50%;
 }
+
 .heroImg{
     width: 50%;
     z-index: 1;
-    animation-name: hero;
-    animation-duration: 3s;
+    animation-name: image;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function:linear;
+    
 }
-@keyframes hero{
-    0% {
-        transform: translate(0,0px);
+
+@keyframes image{
+    0%{
+        transform: translateY(0);
     }
-    50% {
-        transform: translate(0,30px);
+    50%{
+        transform: translateY(10px) ;
     }
-    100% {
-        transform: translate(0,-0px);
+    100%{
+        transform: translateY(-0);
     }
 }
 
@@ -101,9 +107,8 @@
 }
 @media screen and (max-width:800px) {
     .heroImg{
-        width: 80%;
+        width: 80% !important;
     }
-    @keyframes hero{}
     .container{
         flex-direction: column-reverse;
     }

@@ -12,13 +12,13 @@ const Experience = () => {
               <p className='sibiling-img'>
                 <img src="asserts/Experience/image 5.png" alt=""width="75px" height="75px" />
               </p>
-              <h4>HTML</h4>
+              <h4>HTML</h4> 
             </p>
             <p className="sibiling">
               <p className='sibiling-img'>
                 <img src="asserts/Experience/image 6.png" alt=""width="75px" height="75px"  />
               </p>
-              <h4>CSS</h4>
+              <h4>CSS</h4> 
             </p>
             <p className="sibiling">
               <p className='sibiling-img'>

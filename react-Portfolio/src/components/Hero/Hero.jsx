@@ -13,8 +13,8 @@ const Hero = () => {
         <img src="asserts/Hero/7795-photoaidcom-cropped.jpg" className='heroImg' />
         <div className="topBlur"></div>
         <div className="bottomBlur"></div>
-    </section>
+    </section> 
   )
 } 
 
-export default Hero
+export default Hero 
